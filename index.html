@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+       <img class="logo" src="logo.png" alt="">
+
+       <div id="menu" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+          <a class="rf" href="#home">home</a>
+          <a class="rf" href="#protect">protect</a>
+          <a class="rf" href="#symptoms">symptoms</a>
+          <a class="rf" href="#prevent">prevent</a>
+          <a class="livebtn" href="#live" ><button class="btnlive">live</button></a>
+      </nav>
+
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h1>fight from Corona Virus</h1>
+            <h3>stay home, stay safe</h3>
+            <a href="#" class="btn">how to prevent</a>
+        </div>
+    
+    </section>
+    <section class="protect" id="protect">
+        <h1 class="heading">take steap to <span>protect</span> yourself</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="img/one.png" alt="">
+                <h3>hand-wash</h3>
+                <p>wash hand befor eating,wash hand with soap and water or use hand sanitizer gel and wash hand after using the toilet, handling garbage and touching door handles.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+
+            <div class="box">
+                <img src="img/two.png" alt="">
+                <h3>getting an infection</h3>
+                <p>avoid contact with people who are sick avoid unnecessary travel to crowded places and outbreak areas wear a cloth mask or hygienic mask and wash your hands</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+
+            <div class="box">
+                <img src="img/three.png" alt="">
+                <h3>public distance</h3>
+                <p>reduce spending time in public places reduce attending mass gathering activities reduce the spread of the disease if you get a fever take a leave of absence</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="symptoms" id="symptoms">
+
+        <h1 class="heading">covid-19 symptoms</h1>
+        <div class="column">
+
+            <div class="main-image">
+                <img src="img/main-symp-img.png" alt="">
+
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/symp-a.png" alt="">
+                    <h3>dry cough</h3>
+                </div>
+
+                <div class="box">
+                    <img src="img/symp-b.png" alt="">
+                    <h3>sore throat</h3>
+                </div>
+
+                <div class="box">
+                    <img src="img/symp-c.png" alt="">
+                    <h3>cold</h3>
+                </div>
+
+                <div class="box">
+                    <img src="img/k.png" alt="">
+                    <h3>fever</h3>
+                </div>
+
+                <div class="box">
+                    <img src="img/symp-e.png" alt="">
+                    <h3>headache</h3>
+                </div>
+
+                <div class="box">
+                    <img src="img/symp-f.png" alt="">
+                    <h3>vomiting</h3>
+                </div>
+
+            
+            </div>
+        </div>
+    </section>
+ 
+    <section class="prevent" id="prevent">
+        <div class="row">
+            <div class="image">
+                <img src="img/do-img.png" alt="">
+            </div>
+            <div class="content">
+                <h1 class="heading"> things <span>not to do</span> during covid</h1>
+                <ul>
+                    <li>Don't toss out those face masks</li>
+                    <li>Don't go to the gym without a plan</li>
+                    <li>Don't throw a party or hit the bars</li>
+                    <li>Don't stop washing your hands</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="content">
+                <h1 class="heading"> things <span>to do</span> during covid</h1>
+                <ul>
+                    <li>Get rest and stay hydrated. </li>
+                    <li>Stay home except to get medical care.</li>
+                    <li>Cover your cough and sneezes with atissue or use the inside of your elbow.</li>
+                    
+                </ul>
+            </div>
+            <div class="image">
+                <img src="img/dont-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="live" id="live">
+        <div class="container">
+            <h2>COVID -19 Cases in <span id="country"></span> <img src="" id="flag"></h2>
+            <div class="board">
+              <div class="card a"><i class="fa fa-tachometer"></i><h5>Active Cases</h5><span id="active"></span></div>
+              <div class="card ca"><i class="fa fa-th-list"></i><h5>Total Cases</h5><span id="cases"></span></div>
+              <div class="card cr"><i class="fa fa-times-circle"></i><h5>Critical Cases</h5><span id="critical"></span></div>
+              <div class="card d"><i class="fa fa-times"></i><h5>Total Deaths</h5><span id="death"></span></div>
+              <div class="card r"><i class="fa fa-check-square-o"></i><h5>Recovered Cases</h5><span id="recovered"></span></div>
+              <div class="card t"><i class="fa fa-eye"></i><h5>Total Testes Done</h5><span id="tests"></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="image-box">
+          <img src="img/sd.jpg" alt="Accordion Image">
+        </div>
+        <div class="accordion-text">
+          <div class="title">FAQ</div>
+        <ul class="faq-text">
+          <li>
+            <div class="question-arrow">
+              <span class="question">what is covid-19?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.</p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">
+                what should i do if i got sick or someone in my house gets sick?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>People who have been in close contact with someone who has COVID-19—excluding people who have had COVID-19 within the past 3 months or who are fully vaccinated</p>
+            <p>. People who have tested positive for COVID-19 within the past 3 months and recovered do not have to quarantine or get tested again as long as they do not develop new symptoms.</p>
+            <p>. People who develop symptoms again within 3 months of their first bout of COVID-19 may need to be tested again if there is no other cause identified for their symptoms.</p>
+            <p>.People who have been in close contact with someone who has COVID-19 are not required to quarantine if they have been fully vaccinated against the disease and show no symptoms. </p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">should i be tested for a current infection?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>The following people should get tested for current COVID-19 infection:</p>
+            <p>. People who have symptoms of COVID-19. People who have had a known exposure to someone with suspected or confirmed COVID-19. People who have come into close contact with someone with COVID-19 should be tested to check for infection:
+                Fully vaccinated people should be tested 5–7 days after their last exposure.
+                People who are not fully vaccinated should get tested immediately when they find out they are a close contact. If their test result is negative, they should get tested again 5–7 days after their last exposure or immediately if symptoms develop.
+                People not fully vaccinated with COVID-19 vaccine who are prioritized for expanded community screening for COVID-19.</p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">what is contact tracing?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>Contact tracing has been used for decades by state and local health departments to slow or stop the spread of infectious diseases.</p>
+            <p>Contact tracing slows the spread of COVID-19 by
+
+                Letting people know they may have been exposed to COVID-19 and should monitor their health for signs and symptoms of COVID-19
+                Helping people who may have been exposed to COVID-19 get tested
+                Asking people to self-isolate if they have COVID-19 or self-quarantine if they are a close contact of someone with COVID-19
+                During contact tracing, the health department staff will not ask you for
+                
+                Money
+                Social Security number
+                Bank account information
+                Salary information
+                Credit card numbers
+                </p>
+            <span class="line"></span>
+          </li>
+          <li>
+            <div class="question-arrow">
+              <span class="question">can i use hand sanitizer on pets?</span>
+              <i class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <p>Do not wipe or bathe your pet with chemical disinfectants, alcohol, hydrogen peroxide, or other products, such as hand sanitizer, counter-cleaning wipes, or other industrial or surface cleaners. If you have questions about appropriate products for bathing or cleaning your pet, talk to your veterinarian. If your pet gets hand sanitizer on their skin or fur, rinse or wipe down your pet with water immediately. If your pet ingests hand sanitizer (such as by chewing the bottle) or is showing signs of illness after use, contact your veterinarian or pet poison control immediately. </p>
+            <span class="line"></span>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate minima soluta distinctio eaque magni veritatis dicta dolore dignissimos totam quis!</p>
+            </div>
+    
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">france</a>
+                <a href="#">russia</a>
+                <a href="#">japan</a>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#protect">protect</a>
+                <a href="#symptoms">symptoms</a>
+                <a href="#prevent">prevent</a>
+                <a href="#live">live</a>
+                <!-- <a href="#">hand-wash</a> -->
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+                <a href="#">youtube</a>
+            </div>
+    
+        </div>
+    
+        <h1 class="credit"> created by <a href="#">mr. prince busa</a> &copy; copyright @ 2021 </h1>
+    
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="style.js"></script>
+</body>
+</html>
