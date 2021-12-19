@@ -36,9 +36,29 @@ header.sticky{
     background:#fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
+header a{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: brown;
+}
 .logo{
+    margin-left: 2rem;
     height: 67px;
-    width: 15.7rem;
+    width: 15.9rem;
+    display: flex;
+    align-items: center;
+}
+.ro{
+    height: 35px;
+    width: 3.6rem;
+
+}
+.ro{
+    animation: gocorona 3s linear infinite;
+}
+@keyframes gocorona{
+    0% { transform: rotate(0);}
+    100% { transform: rotate(360deg);}
 }
 .navbar a{
     font-size: 2.1rem;
@@ -557,4 +577,9 @@ hr{
     .board {
       column-count: 1;
     }
+  }
+  @media (max-width: 810px) {
+      header{
+          height: 7rem;
+      }
   }
