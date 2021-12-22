@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+header{
+    width: 100%;
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000; 
+    background-color: #fff;
+    
+    border-radius: 20px;
+    box-shadow: 0.5rem .5rem rgba(0,0,0,.1);
+
+    
+}
+.logo{
+    margin-left: 2rem;
+    height: 67px;
+    width: 15.9rem;
+    display: flex;
+    align-items: center;
+}
+.ro{
+    height: 35px;
+    width: 35px;
+
+}
+.ro{
+    animation: gocorona 3s linear infinite;
+}
+@keyframes gocorona{
+    0% { transform: rotate(0);}
+    100% { transform: rotate(360deg);}
+}
+header .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: brown;
+}
+section{
+    min-height: 70vh;
+    padding: 1rem 9%;
+    padding-top: 7rem;
+    padding-top: 60px;
+}
+.home{
+    background: url(img/home.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 9rem;
+    justify-content: center;
+    display: flex;
+}
+.content h1{
+    font-weight: bolder;
+    color: rgb(255, 0, 0);
+    font-size: 5rem;
+    background-color: rgba(37, 37, 37, 0.301);
+    padding: 6px 10px;
+    border-radius: 30px;
+}
+h1{
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+p{
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+.goback{
+    width: 39px;
+    height: 39px;
+}
+h3{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    margin-left: 50%;
+    margin-top: 2rem;
+}
+
+@media (max-width: 810px) {
+    header{
+        height: 7rem;
+    }
+}
